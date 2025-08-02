@@ -26,8 +26,18 @@ namespace dcit318_assignment2_11262526
             Console.WriteLine($"Circle Area: {circle.GetArea():F2}");       // Expected: 78.54
             Console.WriteLine($"Rectangle Area: {rectangle.GetArea():F2}"); // Expected: 24.00
 
+            // === Task 3: Interfaces ===
+            Console.WriteLine("\n=== Interfaces ===");
+
+            IMovable car = new Car();
+            IMovable bicycle = new Bicycle();
+
+            car.Move();       // Output: Car is moving
+            bicycle.Move();   // Output: Bicycle is moving
+
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
+
         }
     }
 }
